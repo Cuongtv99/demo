@@ -9,6 +9,8 @@ function ScheduleItem(props) {
           <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img className="cards__item__img" alt="Courses" src={props.src} />
           </figure>
+        </Link>
+        <Link className="cards__item__link" to={props.path}>
           <div className="cards__item__info">
             <h5 className="cards__item__text">
               {props.text}

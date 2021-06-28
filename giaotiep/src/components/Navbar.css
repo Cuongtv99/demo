@@ -1,5 +1,6 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(102, 57, 175) 0%, rgb(162, 123, 207) 100%);
+    /* background: linear-gradient(90deg, rgb(102, 57, 175) 0%, rgb(162, 123, 207) 100%); */
+    background: #fff;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@
     max-width: 1500px;
 }
 .navbar-logo {
-    color: #fff;
+    color: blue;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -45,7 +46,7 @@
     height: 60px;
 }
 .nav-links {
-    color: #fff;
+    color:black;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -57,7 +58,7 @@
     transition: all 0.2s ease-out;
 }
 .fa-bars {
-    color: #fff;
+    color:black;
 }
 .nav-links-mobile {
     display: none;

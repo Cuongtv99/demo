@@ -37,7 +37,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMoblieMenu}>
-                Home
+                Trang chủ
               </Link>
             </li>
             <li className="nav-item">
@@ -46,7 +46,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMoblieMenu}
               >
-                Courses
+                Khóa Học
               </Link>
             </li>
             <li className="nav-item">
@@ -55,7 +55,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMoblieMenu}
               >
-                Service
+                Tự luyện
               </Link>
             </li>
             <li className="nav-item">
@@ -64,7 +64,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMoblieMenu}
               >
-                Contacts
+                Tin Tức
               </Link>
             </li>
             <li className="nav-item">
@@ -73,11 +73,11 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMoblieMenu}
               >
-                Register
+                Thành tựu
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">Đăng nhập</Button>}
         </div>
       </nav>
     </>

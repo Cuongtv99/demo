@@ -5,53 +5,53 @@ import CardItem from "./CardItem";
 function Cards() {
   return (
     <div className="cards">
-      <h1>Check out these COURSES Destinations!</h1>
+      <h1>Khóa học đề xuất</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
               src="images/img-9.jpg"
-              text="Name Courses 1"
-              text1="Detail Courses"
-              label="Courses 1"
-              path="/services"
+              text="Ôn tập căn bản toán 12"
+              text1="Thầy: Trần Đình Thiện"
+              label="Basic"
+              path="/courses"
             />
             <CardItem
               src="images/img-2.jpg"
-              text="Name Courses 2"
-              text1="Detail Courses"
-              label="Courses 2"
-              path="/services"
+              text="Ôn tập căn bản hóa 12"
+              text1="Thầy: Trần Văn Cường"
+              label="Basic"
+              path="/courses"
+            />
+            <CardItem
+              src="images/img-3.jpg"
+              text="Ôn tập căn bản anh văn 12"
+              text1="Thầy: Phan Thanh Hoàng"
+              label="Basic"
+              path="/courses"
             />
           </ul>
           <ul className="cards__items">
             <CardItem
-              src="images/img-3.jpg"
-              text="Name Courses 3"
-              text1="Detail Courses"
-              label="Courses 3"
-              path="/services"
-            />
-            <CardItem
               src="images/img-4.jpg"
-              text="Name Courses 4"
-              text1="Detail Courses"
-              label="Courses 4"
-              path="/products"
+              text="Ôn tập căn bản hóa 12"
+              text1="Thầy: Trần Văn Cường"
+              label="Basic"
+              path="/courses"
             />
             <CardItem
               src="images/img-8.jpg"
-              text="Name Courses 5"
-              text1="Detail Courses"
-              label="Courses 5"
-              path="/sign-up"
+              text="Ôn tập căn bản toán 12"
+              text1="Thầy: Trần Đình Thiện"
+              label="Basic"
+              path="/courses"
             />
             <CardItem
               src="images/img-8.jpg"
-              text="Name Courses 6"
-              text1="Detail Courses"
-              label="Courses 6"
-              path="/sign-up"
+              text="Ôn tập căn bản anh văn 12"
+              text1="Thầy: Phan Thanh Hoàng"
+              label="Basic"
+              path="/courses"
             />
           </ul>
         </div>
