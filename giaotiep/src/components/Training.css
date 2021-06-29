@@ -93,10 +93,17 @@
   
   .cards__item__text {
     color: #252e48;
+    font-size: 20px;
+    line-height: 24px;
+    width: fit-content;
+  }
+  .cards__item__text1 {
+    color: #252e48;
     font-size: 18px;
     line-height: 24px;
-    width: max-content;
+    width: fit-content;
   }
+
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
