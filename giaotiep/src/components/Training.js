@@ -16,7 +16,7 @@ function Training() {
               trong quá trình làm bài tự luyện 
               hoặc kiểm tra,..."
               //   label="Basic"
-              path="/courses"
+              path="/result"
             />
             <TrainingItem
               src="images/img-2.jpg"

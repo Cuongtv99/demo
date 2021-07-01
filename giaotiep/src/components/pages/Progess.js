@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Progess() {
   return (
     <div>
-      <Link to="/test">
+      <Link to="/record">
         <i className="fa fa-arrow-left" style={{ cursor: "pointer" }}></i>
       </Link>
       <h1 className="progess">Tiến độ học tập</h1>

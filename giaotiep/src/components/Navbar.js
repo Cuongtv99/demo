@@ -63,7 +63,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/register"
+                to="/record"
                 className="nav-links"
                 onClick={closeMoblieMenu}
               >
