@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,380px);
     margin-top: 80px;
+
 }
 
 .resultPage .chart1{
@@ -10,6 +11,7 @@
     grid-column: 1 / span 2;
     display: flex;
     align-items: center;
+    background-color: #FF000026;
 }
 
 .resultPage .chart2{
@@ -17,10 +19,18 @@
     max-width: 300px !important;
     margin-left: 50px;
     margin-bottom: 40px;
-    
+    color: black;
+    background-color: #FF000026;
 }
+
+
 .resultPage .chart__text{
     margin-left: 20px;
+
+}
+
+.resultPage .textcolor{
+    background-color: #FF000026;
 }
 
 .resultPage .chart__judge{
@@ -28,4 +38,5 @@
     display: grid;
     grid-template-columns: repeat(2,200px);
     grid-template-rows: repeat(2 , 100px);
+    background-color: #FF000026;
 }

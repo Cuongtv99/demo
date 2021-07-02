@@ -23,7 +23,7 @@ function Training() {
               text="Hoạt động"
               text1="Tổng hợp kết quả qua các bài kiểm tra hoặc tự luyện ,..."
               //   label="Basic"
-              path="/test"
+              path="/activity"
             />
           </ul>
           <ul className="cards__items">

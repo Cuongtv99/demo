@@ -9,6 +9,7 @@ import Progess from "./components/pages/Progess";
 import TrainingPage from "./components/pages/TrainingPage";
 import Record from "./components/pages/Record";
 import Result from "./components/pages/Result";
+import Activity from "./components/pages/Activity";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/news" component={Contact} />
           <Route path="/progess" component={Progess} />
           <Route path="/result" component={Result} />
+          <Route path="/activity" component={Activity} />
         </Switch>
       </Router>
     </>

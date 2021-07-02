@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 function Progess() {
   return (
     <div>
-      <Link to="/record">
-        <i className="fa fa-arrow-left" style={{ cursor: "pointer" }}></i>
-      </Link>
-      <h1 className="progess">Tiến độ học tập</h1>
-      <div className="dropdown ms-3">
+      <h1
+        className="result"
+        style={{ textAlign: "inherit", border: "1px solid black" }}
+      >
+        <Link to="/record">
+          <i className="fa fa-arrow-left" style={{ marginRight: "40px" }}></i>
+        </Link>
+        Tiến độ học tập
+      </h1>
+      <div className="dropdown ms-3 mb-3">
         <button
           className="btn btn-white dropdown-toggle"
           type="button"
@@ -36,7 +41,10 @@ function Progess() {
           </li>
         </ul>
       </div>
-      <form className="row g-3" style={{ padding: "80px 80px" }}>
+      <form
+        className="row g-3"
+        style={{ padding: "80px 80px", background: "#FF000026" }}
+      >
         <div className="col-12">
           <i className="progess-icon fa fa-book"></i>
           <label htmlFor="inputEmail4" className="form-label">
