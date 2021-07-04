@@ -31,7 +31,7 @@ function Training() {
               src="images/img-4.jpg"
               text="Tiến độ:"
               text1="Thống kê tiến độ trong quá trình học "
-              label="Basic"
+              // label="Basic"
               path="progess"
             />
             <TrainingItem
