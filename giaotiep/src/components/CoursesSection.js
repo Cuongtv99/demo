@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Button } from "./Button";
+import { Chat } from "react-chat-popup";
 import "./CoursesSection.css";
 
 function CoursesSection() {
@@ -25,6 +26,7 @@ function CoursesSection() {
           WATCH DEMO <i className="far fa-play-circle" />
         </Button>
       </div>
+      <Chat />
     </div>
   );
 }
