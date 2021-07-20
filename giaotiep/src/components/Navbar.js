@@ -1,80 +1,46 @@
-import React, { useState } from "react";
-// import {  useEffect } from "react";
+import React from "react";
+import {useLocation} from 'react-router-dom';
+import {Button, Container, Form, FormControl, Nav, Navbar, Row} from "react-bootstrap";
 
-import { Link } from "react-router-dom";
-// import { Button } from "./Button";
 import "./Navbar.css";
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMoblieMenu = () => setClick(false);
-
-  // const showButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   showButton();
-  // }, []);
-
-  // window.addEventListener("resize", showButton);
-
-  return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMoblieMenu}>
-            GTNM <i class="fas fa-graduation-cap"></i>
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMoblieMenu}>
-                Trang chủ
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/courses"
-                className="nav-links"
-                onClick={closeMoblieMenu}
-              >
-                Khóa Học
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/test" className="nav-links" onClick={closeMoblieMenu}>
-                Tự luyện
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/news" className="nav-links" onClick={closeMoblieMenu}>
-                Tin Tức
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/record"
-                className="nav-links"
-                onClick={closeMoblieMenu}
-              >
-                Thành tựu
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
-  );
+function Navbars() {
+    let isHomePage = useLocation().pathname === '/';
+    return (
+        <>
+            <Navbar bg="dark" variant="dark" sticky={"top"}>
+                <Container>
+                    <Row>
+                        <Navbar.Brand href="/">
+                            <i className="fas fa-graduation-cap"></i>
+                        </Navbar.Brand>
+                    </Row>
+                    <Row>
+                        {
+                            isHomePage ? <div></div> : <Form className="d-flex">
+                                <FormControl
+                                    type="search"
+                                    placeholder="Search"
+                                    className="mr-2"
+                                    aria-label="Search"
+                                />
+                                <Button variant="outline-success">Search</Button>
+                            </Form>
+                        }
+                    </Row>
+                    <Row>
+                        <Nav className="me-auto">
+                            <Nav.Link href="/"> Trang chủ</Nav.Link>
+                            <Nav.Link href="/courses">Khóa Học</Nav.Link>
+                            <Nav.Link href="/test">Tự luyện</Nav.Link>
+                            <Nav.Link href="/news">Tin Tức</Nav.Link>
+                            <Nav.Link href="/record">Thành tựu</Nav.Link>
+                        </Nav>
+                    </Row>
+                </Container>
+            </Navbar>
+        </>
+    );
 }
 
-export default Navbar;
+export default Navbars;

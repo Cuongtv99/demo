@@ -47,7 +47,7 @@ function Progess() {
       >
         <div className="col-12">
           <i className="progess-icon fa fa-book"></i>
-          <label htmlFor="inputEmail4" className="form-label">
+          <label for="inputEmail4" className="form-label">
             Hoàn thành 50% nội dung khoá học
           </label>
 

@@ -1,58 +1,79 @@
-.search_tool .search_item{
+.search_tool .search_item {
     width: 600px;
     padding-left: 40px;
 }
-.search_tool{
+
+.search_tool {
     justify-content: center;
 }
+.form__field {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-bottom: 2px solid #949494;
+    outline: 0;
+    padding: 5px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field::placeholder {
+    color: #949494;
+}
 
-.courses__container{
+.courses__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,600x);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 600x);
     margin: 20px 20px;
 }
-.courses__container .courses__item1{
+
+.courses__container .courses__item1 {
     grid-column: 1 / span 2;
     grid-row: 1/ span 1;
 }
-.courses__container .courses__item1 .text_courses{
+
+.courses__container .courses__item1 .text_courses {
     display: flex;
     justify-content: space-between;
 }
-.courses__container .courses__item1 .comment1{
+
+.courses__container .courses__item1 .comment1 {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
 }
 
-.courses__container .courses__item1 .comment1 button{
+.courses__container .courses__item1 .comment1 button {
     border-radius: 5px;
     background-color: #3EC6FF;
     width: 50px;
     margin-left: 40px;
 }
 
-.courses__container .courses__item1 .comment2{
+.courses__container .courses__item1 .comment2 {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
 
 }
-.courses__container .courses__item1 .comment3{
+
+.courses__container .courses__item1 .comment3 {
     display: flex;
     align-items: center;
 }
-.courses__container .courses__item2{
+
+.courses__container .courses__item2 {
     grid-row: 1 / span 3;
     grid-column: 3 / span 1;
     background: #FDFDFD;
 }
-.courses__container .courses__item2 .courses__recom{
+
+.courses__container .courses__item2 .courses__recom {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
 }
-.courses__container .courses__item2 .text{
+
+.courses__container .courses__item2 .text {
     margin-top: 10px;
 }

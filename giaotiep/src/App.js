@@ -1,6 +1,6 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbars from "./components/Navbar";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./components/pages/Home";
 import Courses from "./components/pages/Courses";
 import SignUp from "./components/pages/SignUp";
@@ -10,12 +10,13 @@ import TrainingPage from "./components/pages/TrainingPage";
 import Record from "./components/pages/Record";
 import Result from "./components/pages/Result";
 import Activity from "./components/pages/Activity";
+import React from "react";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+         <Navbars></Navbars>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/test" component={TrainingPage} />
