@@ -7,7 +7,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.status(200).send("Helloworld");
 });
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
+// const PORT = process.env.PORT || 8080;
+app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
